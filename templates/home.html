@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<style>
+    .section{
+        margin-top: 50px;;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-4"></div> 
+    <div class="col-md-4 section">
+
+        <h1>Welcome to</h1>
+        {% if session ['name'] %}
+       
+        {% else %}
+            <h2><b>Brain Tumor Detector</b></h2><h3>Web Application</h3><br>
+            <p>Please Login or Register to Continue</p>
+        {% endif %}
+    
+        
+    </div>
+    <div class="col-md-4"></div> 
+</div>
+
+{% endblock %}
